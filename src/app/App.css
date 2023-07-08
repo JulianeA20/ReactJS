@@ -1,0 +1,58 @@
+.App h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.App .container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.App .container .form {
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    box-shadow: 0 0 6px gray;
+    border-radius: 5px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.container form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.container form div input {
+    outline: none;
+    padding: 0.875rem;
+    font-size: 1rem;
+}
+
+.container form button {
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.container form .label-img input {
+    display: none;
+}
+
+.container form .label-img label {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
