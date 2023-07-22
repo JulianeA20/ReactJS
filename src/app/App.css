@@ -1,58 +1,80 @@
-.App h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 3rem;
+.home-title {
+  font-size: 3rem;
+  margin-block: 2rem;
+  text-align: center;
 }
 
-.App .container {
-    margin-top: 3rem;
+.container {
     display: flex;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.App .container .form {
-    width: 40%;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid gray;
-    box-shadow: 0 0 6px gray;
-    border-radius: 5px;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 2rem;
-}
-
-
-.container form div {
+    padding: 40px;
+  }
+  
+  .container form {
+    color: rgb(255, 255, 255);
+    width: 35rem;
+    height: fit-content; /* mudei aqui */
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(36, 36, 36);
+    border: 1px 5px 15px rgb(251, 251, 251);
+    border-radius: 5px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-}
-
-.container form div input {
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .container form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+  }
+  
+  .container form input {
+    width: 100%;
+    padding: 10px;
     outline: none;
-    padding: 0.875rem;
-    font-size: 1rem;
-}
-
-.container form button {
-    border: none;
-    background-color: blueviolet;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-size: 1.5rem;
-}
-
-.container form .label-img input {
-    display: none;
-}
-
-.container form .label-img label {
+    font-size: 20px;
+  }
+  
+  .container .label-imagem label {
     border: 1px solid black;
-    text-align: center;
-    padding: 1rem;
-    cursor: pointer;
-}
+    padding: 20px;
+  }
+  
+  .container .label-imagem input{
+    display: none;
+  }
+  
+  .container form button {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgb(222, 64, 151);
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .container-eventos {
+    width: 70%;
+    height: 50vh; /* mudei-aqui */
+    overflow-y: auto; /* aqui também */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    float: right;
+  }
+
+  .preview-imagem img {
+    width: 100%;
+    height: 25rem;
+    display: block;
+    margin-inline: auto;
+  }

@@ -1,0 +1,17 @@
+Aula 01 - 08/07/23
+
+React: é um framewok para criação de sites
+
+Instalando o React:
+
+- abrir o prompt (na pasta pelo window explorer cmd)
+- npx create-react-app eventos - projeto criado no react
+- cd eventos: para mudar para a pasta eventos
+
+- npm i : para instalar a pasta node_modules
+
+
+
+No terminal do VScode:
+- cd ./eventos: para mudar para pasta eventos
+-npm start: para inicializar o servidor
