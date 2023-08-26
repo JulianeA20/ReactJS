@@ -12,7 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,9,121,1) 35%, rgba(121,9,77,1) 77%);
+  background: linear-gradient(90deg, rgba(52, 4, 164, 0.927) 10%, rgba(80,9,121,1) 35%, rgba(121,9,77,1) 67%);
 }
 
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,300&display=swap');
+
 .home-title {
   font-size: 3rem;
   margin-block: 2rem;
@@ -15,9 +17,9 @@
     color: rgb(255, 255, 255);
     width: 35rem;
     height: fit-content; /* mudei aqui */
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;    
     background-color: rgb(36, 36, 36);
     border: 1px 5px 15px rgb(251, 251, 251);
     border-radius: 5px;
@@ -26,6 +28,8 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    position: relative;
+    left: 70px;
   }
   
   .container form div {
@@ -36,39 +40,94 @@
   }
   
   .container form input {
+    color: white;
     width: 100%;
     padding: 10px;
+    font-size: 17px;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
     outline: none;
-    font-size: 20px;
+  } 
+
+  .container form label {
+    color: rgb(255, 255, 255);
+  }
+
+  .group input {
+    margin: 1em 0 1em 0;
+    max-width: 40rem;
+    position: relative;
+    border: 2px solid blueviolet;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 1rem;
   }
   
-  .container .label-imagem label {
-    border: 1px solid black;
-    padding: 20px;
+  .group label {
+    font-size: 100%;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .group label :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    background-color: #e8e8e8;
+  }
+
+  .data {
+    text-align: center;
+  }
+
+  .data input {
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid;
+    
+  }
+
+  .label-imagem label {
+    border: 1px solid transparent;
+    background-color: blueviolet;
+    border-radius: 20px;
+    max-width: 15rem;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
   }
   
-  .container .label-imagem input{
+  .label-imagem input{
     display: none;
   }
   
+  .label-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .container form button {
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
-    background-color: rgb(222, 64, 151);
+    background-color: white;
     padding: 20px;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 30, 176);
   }
 
   .container-eventos {
+    position: relative;
+    left: 10%;
+    bottom: 500px;
     width: 70%;
-    height: 50vh; /* mudei-aqui */
+    height: 40vh; /* mudei-aqui */
     overflow-y: auto; /* aqui também */
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     float: right;
   }
 

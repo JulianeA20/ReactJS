@@ -1,5 +1,5 @@
 import './App.css';
-import { Header } from '../components/Header';
+import { Header } from '../components/Header/header';
 import { EventCard } from '../components/EventCard/EventCard';
 import { useState } from 'react';
 
@@ -68,17 +68,19 @@ function App() {
 
         <div className='container'>
           <form onSubmit={criarEvento}>
-            <div>
-              <label htmlFor='nome'>Nome</label>
-              <input onChange={(e) => setNome(e.target.value)} type='text' id='nome'/>
+            <div className='group'>
+              <div id='nome'>
+                <label htmlFor='nome'>Nome</label>
+                <input onChange={(e) => setNome(e.target.value)} type='text' id='nome'/>
+              </div>
+              <div id='descricao'>
+                <label htmlFor='descricao'>Descrição</label>
+                <input type='text' id='descricao'/>
+              </div>
             </div>
-            <div>
+            <div className='data'>
               <label htmlFor='data'>Data</label>
               <input onChange={(e) => setData(e.target.value)} type='datetime-local' id='data' />
-            </div>
-            <div>
-              <label htmlFor='descricao'>Descrição</label>
-              <input type='text' id='descricao' />
             </div>
             <div className='label-imagem'>
               <label htmlFor='imagem'>Selecione a imagem</label>
